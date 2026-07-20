@@ -1,0 +1,31 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #000; }
+.slide {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #fff;
+  background: #111;
+  text-align: center;
+}
+.slide.active { display: block; }
+.slide img {
+  max-width: 80%;
+  max-height: 60vh;
+  margin-top: 20px;
+  border: 2px solid #555;
+}
+h1 { font-size: 2.5em; }
+p { font-size: 1.4em; }
+.nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 0 10px;
+}
