@@ -14,9 +14,9 @@ export default function App() {
     <>
       <Presentation current={current} lang={lang} />
       <div className="nav">
-        <button onClick={prev}>ก่อนหน้า</button>
+        <button onClick={prev}>&lt;&lt;</button>
         <button onClick={toggleLang}>{lang === 'th' ? 'English' : 'ไทย'}</button>
-        <button onClick={next}>ถัดไป</button>
+        <button onClick={next}>&gt;&gt;</button>
       </div>
     </>
   )
