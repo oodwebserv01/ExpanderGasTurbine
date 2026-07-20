@@ -1,29 +1,53 @@
 import Slide from './Slide.jsx'
 
-const slidesData = [
+export const slidesData = [
   {
-    title: 'Gas Turbine Engines',
-    text: 'An introduction to turbine engines used in power generation and aviation',
-    imgSrc: 'images/gas_turbine_overview.jpg',
-    imgAlt: 'Gas Turbine Overview',
+    title: 'เครื่องยนต์เทอร์ไบน์ก๊าซ (Gas Turbine)',
+    text: 'บทนำสู่เครื่องยนต์เทอร์ไบน์ที่ใช้ในงานผลิตไฟฟ้า และการบิน',
+    imgSrc: 'images/BladeDesign01.jpg',
+    imgAlt: 'ใบพัดเทอร์ไบน์',
   },
   {
-    title: 'Basic Components',
-    text: 'Compressor, Combustor, and Turbine',
-    imgSrc: 'images/gas_turbine_components.jpg',
-    imgAlt: 'Gas Turbine Components',
+    title: 'แนวคิดพื้นฐาน',
+    text: 'อากาศถูกอัดตัว เผาไหม้ และขยายตัวเพื่อสร้างกำลัง',
+    imgSrc: 'images/concept.gif',
+    imgAlt: 'แนวคิดการทำงานของเทอร์ไบน์',
   },
   {
-    title: 'Working Principle',
-    text: 'Air is compressed, mixed with fuel, ignited, and expands through the turbine',
-    imgSrc: 'images/gas_turbine_cycle.jpg',
-    imgAlt: 'Gas Turbine Cycle',
+    title: 'ส่วนประกอบหลัก',
+    text: 'คอมเพรสเซอร์ ห้องเผาไหม้ และเทอร์ไบน์',
+    imgSrc: 'images/BladeDesign02.png',
+    imgAlt: 'การออกแบบใบพัด',
   },
   {
-    title: 'Applications',
-    text: 'Aircraft propulsion, power plants, and marine propulsion',
-    imgSrc: 'images/gas_turbine_application.jpg',
-    imgAlt: 'Gas Turbine Application',
+    title: 'ปั๊มและการประกอบ',
+    text: 'ระบบปั๊มน้ำมันและการประกอบชิ้นส่วน',
+    imgSrc: 'images/pump.gif',
+    imgAlt: 'ปั๊ม',
+  },
+  {
+    title: 'การประกอบปั๊ม',
+    text: 'ขั้นตอนการประกอบชุดปั๊มเข้ากับระบบ',
+    imgSrc: 'images/pumpassembky.gif',
+    imgAlt: 'การประกอบปั๊ม',
+  },
+  {
+    title: 'วาล์วและห้องเผา',
+    text: 'วาล์วควบคุมการไหล และห้องเผาไหม้',
+    imgSrc: 'images/valve01.gif',
+    imgAlt: 'วาล์ว',
+  },
+  {
+    title: 'ห้องเผาและวาล์ว',
+    text: 'การทำงานร่วมกันของห้องเผาและวาล์ว',
+    imgSrc: 'images/chambervalve.gif',
+    imgAlt: 'ห้องเผาและวาล์ว',
+  },
+  {
+    title: 'การประกอบทั้งชุด',
+    text: 'การประกอบชิ้นส่วนทั้งหมดเป็นเครื่องยนต์เทอร์ไบน์',
+    imgSrc: 'images/assembly01.gif',
+    imgAlt: 'การประกอบเครื่องยนต์',
   },
 ]
 

@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Presentation from './components/Presentation.jsx'
+import Presentation, { slidesData } from './components/Presentation.jsx'
 
 export default function App() {
   const [current, setCurrent] = useState(0)
-  const total = 4
+  const total = slidesData.length
 
   const next = () => setCurrent((c) => (c + 1) % total)
   const prev = () => setCurrent((c) => (c - 1 + total) % total)
@@ -12,8 +12,8 @@ export default function App() {
     <>
       <Presentation current={current} />
       <div className="nav">
-        <button onClick={prev}>Previous</button>
-        <button onClick={next}>Next</button>
+        <button onClick={prev}>ก่อนหน้า</button>
+        <button onClick={next}>ถัดไป</button>
       </div>
     </>
   )
