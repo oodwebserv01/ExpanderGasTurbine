@@ -36,12 +36,6 @@ export default function App() {
             </svg>
             <span>{lang === 'th' ? 'ดาวน์โหลดโมเดล 3D' : 'Download 3D Model'}</span>
           </a>
-          <p className="download-desc">{downloadText[lang]}</p>
-        </div>
-        <div className="nav-right">
-          <button onClick={prev}>&#9664;</button>
-          <button onClick={toggleLang}>{lang === 'th' ? 'English' : 'ไทย'}</button>
-          <button onClick={next}>&#9654;</button>
           <a
             href="https://github.com/oodwebserv01/ExpanderGasTurbine/discussions/1"
             target="_blank"
@@ -53,6 +47,12 @@ export default function App() {
             </svg>
             <span>{lang === 'th' ? 'คุยกับผู้คิดค้น' : 'Talk to Inventor'}</span>
           </a>
+          <p className="download-desc">{downloadText[lang]}</p>
+        </div>
+        <div className="nav-right">
+          <button onClick={prev}>&#9664;</button>
+          <button onClick={toggleLang}>{lang === 'th' ? 'English' : 'ไทย'}</button>
+          <button onClick={next}>&#9654;</button>
           <div className="license-notice">
             {lang === 'th' ? (
               'แบบแปลนและแนวคิดทั้งหมดในเว็บไซต์นี้ ถูกเผยแพร่เป็นสาธารณสมบัติภายใต้สัญญาอนุญาต CC0 1.0 ทุกคนสามารถนำไปศึกษา ดัดแปลง หรือใช้งานต่อได้โดยอิสระ'
