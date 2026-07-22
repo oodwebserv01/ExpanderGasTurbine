@@ -39,16 +39,27 @@ export default function App() {
           <p className="download-desc">{downloadText[lang]}</p>
         </div>
         <div className="nav-right">
-          <button onClick={prev}>&lt;&lt;</button>
+          <button onClick={prev}>&#9664;</button>
           <button onClick={toggleLang}>{lang === 'th' ? 'English' : 'ไทย'}</button>
-          <button onClick={next}>&gt;&gt;</button>
+          <button onClick={next}>&#9654;</button>
+          <a
+            href="https://github.com/oodwebserv01/ExpanderGasTurbine/discussions/1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="discuss-btn"
+          >
+            <svg className="discuss-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span>{lang === 'th' ? 'คุยกับผู้คิดค้น' : 'Talk to Inventor'}</span>
+          </a>
           <div className="license-notice">
             {lang === 'th' ? (
               'แบบแปลนและแนวคิดทั้งหมดในเว็บไซต์นี้ ถูกเผยแพร่เป็นสาธารณสมบัติภายใต้สัญญาอนุญาต CC0 1.0 ทุกคนสามารถนำไปศึกษา ดัดแปลง หรือใช้งานต่อได้โดยอิสระ'
             ) : (
               'All designs and concepts on this website are released into the public domain under the CC0 1.0 license. Anyone is free to study, modify, and use them for any purpose.'
             )}
-          </div>            
+          </div>
         </div>
       </div>
     </>
