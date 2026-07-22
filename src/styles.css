@@ -167,39 +167,44 @@ p { font-size: 1.4em; }
 .discuss-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
+  gap: 4px;
+  padding: 4px 7px;
   background: linear-gradient(135deg, #2d3a1e 0%, #1a2510 100%);
   border: 1px solid #6fa832;
-  border-radius: 6px;
+  border-radius: 4px;
   color: #6fa832;
-  font-size: 0.95em;
+  font-size: 0.65em;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 3px 10px rgba(111, 168, 50, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(111, 168, 50, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .discuss-btn:hover {
   background: linear-gradient(135deg, #3d5028 0%, #253516 100%);
   border-color: #8fc63f;
   color: #8fc63f;
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(111, 168, 50, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 3px 8px rgba(111, 168, 50, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 .discuss-btn:active {
   transform: translateY(0);
   box-shadow: 0 1px 3px rgba(111, 168, 50, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .discuss-icon {
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   flex-shrink: 0;
   stroke-width: 2.5;
   transition: transform 0.2s ease;
 }
 .discuss-btn:hover .discuss-icon {
   transform: translateX(2px);
+}
+
+/* Gap between buttons in nav-left */
+.nav-left a + a {
+  margin-left: 8px;
 }
 .nav button {
   padding: 10px 20px;
