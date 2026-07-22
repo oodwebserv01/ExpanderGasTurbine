@@ -205,3 +205,20 @@ p { font-size: 1.4em; }
 .advantage-text {
   flex: 1;
 }
+
+/* License Notice */
+.license-notice {
+  position: fixed;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid #333;
+  padding: 8px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+  line-height: 1.4;
+}

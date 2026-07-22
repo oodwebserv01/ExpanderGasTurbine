@@ -38,6 +38,13 @@ export default function App() {
           <button onClick={next}>&gt;&gt;</button>
         </div>
       </div>
+      <div className="license-notice">
+        {lang === 'th' ? (
+          'แบบแปลนและแนวคิดทั้งหมดในเว็บไซต์นี้ ถูกเผยแพร่เป็นสาธารณสมบัติภายใต้สัญญาอนุญาต CC0 1.0 ทุกคนสามารถนำไปศึกษา ดัดแปลง หรือใช้งานต่อได้โดยอิสระ'
+        ) : (
+          'All designs and concepts on this website are released into the public domain under the CC0 1.0 license. Anyone is free to study, modify, and use them for any purpose.'
+        )}
+      </div>
     </>
   )
 }
